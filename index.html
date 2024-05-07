@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy</title>
+</head>
+<body>
+    <h1>Proxy</h1>
+    <form method="post">
+        <input type="text" name="url" placeholder="Enter URL">
+        <button type="submit">Fetch</button>
+    </form>
+    {% if content %}
+    <div>
+        {{ content | safe }}
+    </div>
+    {% endif %}
+</body>
+</html>
